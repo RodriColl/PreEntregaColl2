@@ -125,10 +125,10 @@ function pokedex() {
     if (opcion === '1') {
         // Opción 1: Simulacion de encontrarnos a un pokemon salvaje
         const pokemonAleatorio = nombreAzar();
-        alert(datos(pokemonAleatorio));
+            alert(datos(pokemonAleatorio));
     } else if (opcion === '2') {
         // Opción 2: Filtro de tipo pokemon 
-        const tipo = prompt("Tipo de Poémon a filtrar (Normal, Veneno, Dragón, Lucha, Psíquico):");
+        const tipo = prompt("Tipo de Pokémon a filtrar (Normal, Veneno, Dragón, Lucha, Psíquico):");
         const pokemonsFiltrados = filtrarPorTipo(tipo);
         
         if (pokemonsFiltrados.length > 0) {
